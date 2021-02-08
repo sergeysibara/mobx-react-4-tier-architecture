@@ -4,8 +4,10 @@ import SearchParamsStore from './stores/SearchParamsStore';
 import BaseApi from './api/BaseApi';
 import BaseController from './controllers/BaseController';
 
-/** Used in top level components (like App, Root)that do not create stores on
- *  change page
+/**
+ * Creates api, controller, stores.
+ * Do not use this function in hooks to avoid creating stores
+ * instances when changing pages.
  */
 const wrapFeature = (
   apiUrl: string,
