@@ -27,7 +27,7 @@ export default class SearchParamsStore<T extends IFiltersState> {
 
   @observable
   protected pagingState: PagingStateType = {
-    _limit: 10,
+    _limit: 5,
   };
 
   @observable

@@ -1,6 +1,6 @@
 import { default as React, Dispatch, SetStateAction, useState } from 'react';
 
-export default (
+const useInputBind = (
   initialValue = '',
 ): [
   string,
@@ -23,3 +23,5 @@ export default (
     },
   ];
 };
+
+export default useInputBind;
